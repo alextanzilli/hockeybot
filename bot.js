@@ -14,7 +14,7 @@ function respond() {
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
-  if(request.text && botRegexmflpa.test(request.text)) {
+  if(request.text && botRegexmfl.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://daddyleagues.com/MFLPA");
     this.res.end();
