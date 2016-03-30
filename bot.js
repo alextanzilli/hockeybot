@@ -94,7 +94,7 @@ function respond() {
   }
   else if(request.text && botRegexFats.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://media.giphy.com/media/11gZBGuDnYwdpu/giphy.gif");
+    postMessage("https://media.giphy.com/media/YyKPbc5OOTSQE/giphy.gif");
     this.res.end();
   }
   else if(request.text && botRegexSiege.test(request.text)) {
