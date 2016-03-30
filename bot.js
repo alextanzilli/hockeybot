@@ -89,7 +89,7 @@ function respond() {
   }
   else if(request.text && botRegextrades.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/spreadsheets/d/1h2vHYSGyoGtdtm0WSavIePm_IGjONvigvCK558BQuak/edit#gid=1987336271");
+    postMessage("http://bit.ly/1ZKz98I");
     this.res.end();
   }
   else if(request.text && botRegexSiege.test(request.text)) {
