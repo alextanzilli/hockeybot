@@ -53,7 +53,7 @@ function respond() {
     this.res.writeHead(200);
     var req = request.text.substring(5,request.text.length);
     var rep = req.replace(/ /,"+");
-    postMessage("http://daddyleagues.com/SRMFL/players?name="+rep+"&position=all&team=all");
+    postMessage("http://daddyleagues.com/MFLPA/players?name="+rep+"&position=all&team=all");
     this.res.end();
   }  
 
