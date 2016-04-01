@@ -100,7 +100,7 @@ function respond() {
   }
     else if(request.text && botRegexWAT.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/AxtzziK.gif");
+    postMessage("http://i.imgur.com/AxtzziK.gifz");
     this.res.end();
   }
   else if(request.text && botRegexPurp.test(request.text)) {
