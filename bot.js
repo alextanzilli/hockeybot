@@ -146,7 +146,7 @@ function respond() {
   } 
     else if(request.text && botRegexGoat.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://nbcprofootballtalk.files.wordpress.com/2011/06/g_ojsimpson_576.jpg");
+    postMessage("https://yadambross.files.wordpress.com/2012/09/stafford.jpg");
     this.res.end();
   }     
   else if(request.text && botRegexSiege.test(request.text)) {
