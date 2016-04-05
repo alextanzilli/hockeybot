@@ -147,7 +147,7 @@ function respond() {
   } 
     else if(request.text && botRegexGoat.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://yadambross.files.wordpress.com/2012/09/stafford.jpg");
+    postMessage("http://sportsofboston.com/wp-content/uploads/2009/10/100609_stafford.jpg");
     this.res.end();
   }     
     else if(request.text && botRegex420.test(request.text)) {
