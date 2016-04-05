@@ -10,7 +10,7 @@ function respond() {
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexporp = /^\/purpose/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegextrades = /^\/trades/; botRegexFats = /^\/404/; botRegexWAT = /^\/wat/;
       botRegexPurp = /^\/porpoise/; botRegexProp = /^\/propose/; botRegexRec = /^\/records/; botRegexMacho = /^\/machoman/;
       botRegexDuck2 = /^\/ducking/; botRegexTony = /^\/tony/; botRegexDiv = /^\/division/; botRegexJpg = /^\/jpeg/; botRegexGoat = /^\/goat/;
-      botRegex420 = /^\/420/; botRegexHuh = /^\/huh/;
+      botRegex420 = /^\/420/; botRegexHuh = /^\/huh/; botRegexStand = /^\/standings/;
       botRegexSiege = /^\/siege/
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
@@ -160,6 +160,11 @@ function respond() {
     postMessage("http://www.blogcdn.com/blog.moviefone.com/media/2008/03/super_high_me.jpg");
     this.res.end();
   }    
+    else if(request.text && botRegexStand.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://daddyleagues.com/mflpa/standings");
+    this.res.end();
+  }      
   else if(request.text && botRegexSiege.test(request.text)) {
     this.res.writeHead(200);
     if(0.6 >= Math.random() > 0.3)
