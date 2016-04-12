@@ -73,7 +73,7 @@ function respond() {
   } 
   else if(request.text && botRegexSh.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("¯\\_(ツ)_/¯");
+    postMessage("http://media.philly.com/images/092713_shrug_600.jpg");
     this.res.end();
   } 
   else if(request.text && botRegexWk.test(request.text)) {
