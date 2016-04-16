@@ -12,7 +12,7 @@ function respond() {
       botRegexDuck2 = /^\/ducking/; botRegexTony = /^\/tony/; botRegexDiv = /^\/division/; botRegexJpg = /^\/jpeg/; botRegexGoat = /^\/goat/;
       botRegex420 = /^\/420/; botRegexHuh = /^\/huh/; botRegexStand = /^\/standings/; botRegexCarlos = /^\/carlos/; botRegexDET = /^\/detroitpride/;
       botRegexAss = /^\/assemble/; botRegexDD = /^\/dd/; botRegexSIM = /^\/sim/; botRegexFuck = /^\/fuck/; botRegexSnap = /^\/snap/;
-      botRegexToby = /^\/toby/;
+      botRegexToby = /^\/toby/; botRegexDerr = /^\/derrick/;
       botRegexSiege = /^\/siege/
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
@@ -207,6 +207,11 @@ function respond() {
     postMessage("http://media.tumblr.com/tumblr_lyy386VxuH1r5m70go1_500.png");
     this.res.end();
    }
+    else if(request.text && botRegexDerr.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://www.youtube.com/watch?v=nSz16ngdsG0");
+    this.res.end();
+   } 
   else if(request.text && botRegexSiege.test(request.text)) {
     this.res.writeHead(200);
     if(0.6 >= Math.random() > 0.3)
