@@ -224,7 +224,7 @@ function respond() {
    }      
     else if(request.text && botRegexFat.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/XOjp3ty.jpg");
+    postMessage("http://i.imgur.com/hOqSJ2H.jpg");
     this.res.end();
    }    
   else if(request.text && botRegexSiege.test(request.text)) {
