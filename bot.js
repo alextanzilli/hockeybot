@@ -149,7 +149,7 @@ function respond() {
   } 
     else if(request.text && botRegexGoat.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://sportsofboston.com/wp-content/uploads/2009/10/100609_stafford.jpg");
+    postMessage("https://media.giphy.com/media/3o6ozoHnQxpFlZiOwo/giphy.gif");
     this.res.end();
   }     
     else if(request.text && botRegex420.test(request.text)) {
