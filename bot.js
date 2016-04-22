@@ -149,7 +149,7 @@ function respond() {
   } 
     else if(request.text && botRegexGoat.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://media.giphy.com/media/3o6ozoHnQxpFlZiOwo/giphy.gif");
+    postMessage("http://www.glaad.org/sites/default/files/images/2014-03/bledsoe.jpg");
     this.res.end();
   }     
     else if(request.text && botRegex420.test(request.text)) {
