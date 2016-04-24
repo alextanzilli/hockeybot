@@ -210,7 +210,7 @@ function respond() {
    }
     else if(request.text && botRegexDerr.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://www.youtube.com/watch?v=nSz16ngdsG0");
+    postMessage("http://2.bp.blogspot.com/_nfkUveGxxk4/S80JzC0a7iI/AAAAAAAABC0/gz3ekAjv0dQ/s1600/Uni.jpg");
     this.res.end();
    } 
     else if(request.text && botRegexKerm.test(request.text)) {
