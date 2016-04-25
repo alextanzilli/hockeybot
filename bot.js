@@ -210,7 +210,7 @@ function respond() {
    }
     else if(request.text && botRegexDerr.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://2.bp.blogspot.com/_nfkUveGxxk4/S80JzC0a7iI/AAAAAAAABC0/gz3ekAjv0dQ/s1600/Uni.jpg");
+    postMessage("https://opinionsandcoffee.files.wordpress.com/2014/12/gu30.jpg");
     this.res.end();
    } 
     else if(request.text && botRegexKerm.test(request.text)) {
