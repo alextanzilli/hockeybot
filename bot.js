@@ -250,7 +250,7 @@ function respond() {
    }     
     else if(request.text && botRegexGood.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/ZeGRdNH.jpg");
+    postMessage("https://jeffwinbush.files.wordpress.com/2015/07/bradys-soft-balls.png");
     this.res.end();
    }     
   else if(request.text && botRegexSiege.test(request.text)) {
