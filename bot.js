@@ -150,7 +150,7 @@ function respond() {
   } 
     else if(request.text && botRegexGoat.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.glaad.org/sites/default/files/images/2014-03/bledsoe.jpg");
+    postMessage("http://media3.washingtonpost.com/wp-srv/photo/gallery/091126/GAL-09Nov26-3194/media/PHO-09Nov26-190137.jpg");
     this.res.end();
   }     
     else if(request.text && botRegex420.test(request.text)) {
