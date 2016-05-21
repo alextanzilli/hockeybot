@@ -14,7 +14,7 @@ function respond() {
       botRegexAss = /^\/assemble/; botRegexDD = /^\/dd/; botRegexSIM = /^\/sim/; botRegexFuck = /^\/fuck/; botRegexSnap = /^\/snap/;
       botRegexToby = /^\/toby/; botRegexDerr = /^\/derrick/; botRegexKerm = /^\/kermit/; botRegexDalt = /^\/dalton/; botRegexFat = /^\/fatty/;
       botRegexPreach = /^\/preach/; botRegexVote = /^\/vote/; botRegexAnyway = /^\/anyway/; botRegexFif = /^\/fif/; botRegexGood = /^\/goodell/;
-      botRegexRoar = /^\/roar/;
+      botRegexRoar = /^\/roar/; botRegexRespek = /^\/respek/;
       botRegexSiege = /^\/siege/
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
@@ -259,6 +259,11 @@ function respond() {
     postMessage("http://www.blackenterprise.com/wp-content/blogs.dir/1/files/2012/10/Woods.jpg");
     this.res.end();
    }        
+    else if(request.text && botRegexRespek.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://cdn.contentdeliverywizard.com/sites/15/2016/05/08123736/birdman-1024x535.jpg");
+    this.res.end();
+   }           
   else if(request.text && botRegexSiege.test(request.text)) {
     this.res.writeHead(200);
     if(0.6 >= Math.random() > 0.3)
