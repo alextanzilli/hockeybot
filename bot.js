@@ -206,7 +206,7 @@ function respond() {
   }      
     else if(request.text && botRegexToby.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://media.tumblr.com/tumblr_lyy386VxuH1r5m70go1_500.png");
+    postMessage("https://hobbydb-production.s3.amazonaws.com/processed_uploads/subject_photo/subject_photo/image/8117/1436139910-3-8568/Toblerone.jpg");
     this.res.end();
    }
     else if(request.text && botRegexDerr.test(request.text)) {
