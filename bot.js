@@ -171,7 +171,7 @@ function respond() {
   }      
     else if(request.text && botRegexCarlos.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.zicabloc.com/wp-content/uploads/2011/01/carlos-chanteur.jpg");
+    postMessage("https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAI8AAAAJGE0NzBmZDhjLWVjYzAtNDRjYi05YTcxLTJhYTA3NzMxYzJlOA.jpg");
     this.res.end();
   }        
     else if(request.text && botRegexDET.test(request.text)) {
