@@ -282,7 +282,7 @@ function respond() {
     }    
       else if(request.text && botRegexRock.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://goo.gl/forms/OH14rbQfpY9SzCP32")
+    postMessage("http://goo.gl/forms/OH14rbQfpY9SzCP32, www.test.com")
     this.res.end();
     }      
   else if(request.text && botRegexSiege.test(request.text)) {
